@@ -52,6 +52,7 @@ sudo apt install nvidia-driver-430
 https://www.nvidia.com/Download/index.aspx
 ![example images](https://i.imgur.com/Mp2Te2Y.png)
 
+
 ## Approach
 ### Data Augmentation
 Data augmentation is done through the following techniques:
