@@ -52,7 +52,7 @@ sudo apt install nvidia-driver-430
 https://www.nvidia.com/Download/index.aspx
 ![example images](https://i.imgur.com/Mp2Te2Y.png)
 
-
+```
 ## Approach
 ### Data Augmentation
 Data augmentation is done through the following techniques:
@@ -65,8 +65,7 @@ Data augmentation is done through the following techniques:
 - Height Shifting (0.2)
 
 ### Model Details
-
-(/images/model_details.png)
+![Model Details](/images/model_details.png)
 
 ### Training Results
 ![Model Accuracy and Loss](/images/train_acc_loss.png)
