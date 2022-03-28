@@ -64,32 +64,8 @@ Data augmentation is done through the following techniques:
 - Height Shifting (0.2)
 
 ### Model Details
-```
-_________________________________________________________________
-Layer (type)                 Output Shape           Param #   
-=================================================================
-inception_v3 (Functional)    (None, 5, 5, 2048)     21802784  
-_________________________________________________________________
- flatten_2 (Flatten)            (None, 51200)        0                         
-                                                                                                  
- dropout_12 (Dropout)           (None, 51200)        0                      
-                                                                                                  
- dense_12 (Dense)               (None, 16)           819216                 
-                                                                                                  
- batch_normalization_194 (Batch  (None, 16)          64          
- Normalization)                                                                                   
-                                                                                                  
- dropout_13 (Dropout)           (None, 16)           0           
-                                                                                                  
- dense_13 (Dense)               (None, 120)          2040                  
-                                                                                                  
-==================================================================================================
-Total params: 22,624,104
-Trainable params: 821,288
-Non-trainable params: 21,802,816
-__________________________________________________________________________________________________
-```
-A detailed layout of the model is available [here.](/images/model_plot.png)
+
+(/images/model_details.png)
 
 ### Training Results
 ![Model Accuracy and Loss](/images/train_acc_loss.png)
