@@ -4,7 +4,7 @@
 
 ![classifier](https://user-images.githubusercontent.com/61115039/160357524-991b375d-ce3a-4911-92ba-dc40665b0188.PNG)
 
-## Web application Link of AZURE Cloud to run the Model  : https://dogclass.azurewebsites.net/
+## Web application Link of AZURE Cloud : https://dogclass.azurewebsites.net/
 
 ## Description
 The <a href= "http://vision.stanford.edu/aditya86/ImageNetDogs/">Stanford Dogs Dataset</a> contains images of 120 breeds of dogs from around the world. This dataset has been built using images and annotation from ImageNet for the task of fine-grained image categorization. It was originally collected for fine-grain image categorization, a challenging problem as certain dog breeds have near identical features or differ in colour and age.
@@ -88,3 +88,5 @@ https://user-images.githubusercontent.com/61115039/160356753-4e43aeab-1ef0-480d-
 - J. Deng, W. Dong, R. Socher, L.-J. Li, K. Li and L. Fei-Fei, ImageNet: A Large-Scale Hierarchical Image Database. IEEE Computer Vision and Pattern Recognition (CVPR), 2009.  <a href="http://www.image-net.org/papers/imagenet_cvpr09.pdf">[pdf]</a> <a href="http://www.image-net.org/papers/imagenet_cvpr09.bib">[BibTex]</a>
 - Christian Szegedy, Vincent Vanhoucke, Sergey Ioffe, Jonathon Shlens, Zbigniew Wojna. Rethinking the Inception Architecture for Computer Vision, arXiv:1512.00567v3, 2015. <a href= "https://arxiv.org/pdf/1512.00567v3.pdf">[pdf]</a>
 
+## :heart: Owner
+Made with :heart:&nbsp;  by [Aman Chauhan](https://github.com/amanchauhan71)
