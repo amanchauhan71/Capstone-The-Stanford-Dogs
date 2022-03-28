@@ -17,7 +17,6 @@ import numpy as np
 from tensorflow.keras.applications.imagenet_utils import preprocess_input, decode_predictions
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
-import tensorflow as tf
 
 # Flask utils
 from flask import Flask, redirect, url_for, request, render_template
@@ -107,15 +106,12 @@ def model_predict(img_path, model):
     x = np.expand_dims(x, axis=0)
 
     preds = model.predict(x)
-    # score = tf.nn.softmax(preds)
-    print(100 * np.max(preds))
-    score = 100 * np.max(preds)
 
     preds = np.argmax(preds, axis=1)
 
     preds = dog[int(preds)]
 
-    return preds , score
+    return preds
 
 
 @app.route('/', methods=['GET'])
@@ -136,14 +132,12 @@ def upload():
             basepath, 'uploads', secure_filename(f.filename))
         f.save(file_path)
 
-        #prediction
-        preds , score = model_predict(file_path, model)
-        result = preds.replace('_', ' ').capitalize()
-        score = "{:.2f}".format(score)
-        result = result + ' ' + f' ( {str(score)} % Prediction score )'
+        # Make prediction
+        preds = model_predict(file_path, model)
+        result = preds
         return result
     return None
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
